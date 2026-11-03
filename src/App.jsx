@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 import './App.css';
+import SEO from './seo/Seo';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -75,6 +76,7 @@ function App() {
 
   return (
     <>
+      <SEO/>
       {/* 1. Interactive Canvas particle background with theme sync */}
       <NeuralCanvas theme={theme} />
 
